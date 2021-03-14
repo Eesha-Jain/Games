@@ -1,0 +1,129 @@
+::-moz-selection {
+    background-color: #b9ebff;
+}
+
+::selection {
+    background-color: #b9ebff;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+
+h1 {
+    font-size: 32px;
+    text-align: center;
+    color: rgb(53, 164, 255);
+    font-weight: 700;
+}
+
+p {
+    font-size: 14px;
+    text-align: center;
+}
+
+.grid {
+    display: grid;
+    grid-gap: 10px 10px;
+    grid-template-columns: auto auto auto auto;
+    background-color: white;
+    padding: 10px;
+}
+
+@media only screen and (max-width: 800px) {
+  .grid {
+      grid-template-columns: auto auto;
+  }
+}
+.card {
+    border-radius: 10px;
+    background-color: #f6f6f6;
+    padding: 5px;
+}
+
+.card-img {
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    border-radius: 5px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/*CHAT*/
+
+.back-to-top {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    position: fixed;
+    right: 16px;
+    bottom: 16px;
+    background-color: #acffc2; 
+}
+
+/*SPECIFIC TO SNAKE*/
+.canvas-container {
+   width: 100%;
+   text-align: center;
+}
+
+canvas {
+   display: inline;
+}
+
+/*TABS*/
+.tabs {
+    overflow: hidden;
+    background-color: #bbffeb;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.tabs button {
+    background-color: inherit;
+    float: center;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    padding: 14px 30px;
+    transition: 0.3ms;
+    text-align: center;
+    border-left: 0.1px solid #8effb9;
+    border-right: 0.1px solid #8effb9;
+}
+
+.tabs button.active {
+    background-color: #8effb9;
+}
+
+.tabs button:hover {
+    background-color: #abffd8;
+}
+
+.single-tab {
+    display: none;
+    padding: 6px 20px;
+    border: none;
+    background-color: #fafafa;
+    min-height: 100px;
+}
+
+/*INPUT*/
+input[type=text] {
+    outline: none;
+    width: 50%;
+}
